@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Inter&family=Protest+Strike&display=swap');
+
+/* Global styles */
+.home-wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    color: rgba(77, 204, 162, 0.7); /* Red color with 70% opacity */
+    font-weight: bold; /* Make the text bold for active links */
+    /* Add any other styles you want for active links */
+}
+
+.nav {
+    width: 100vw;
+    height: auto;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 25px;
+    margin: 0;
+}
+
+.nav__logo {
+    font-size: 6vh;
+    font-weight: 600;
+    color: rgb(77, 204, 162);
+    padding-left: 20px;
+    transition: color 0.3s ease; /* Add transition for text color */
+}
+
+.nav__logo {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav__menu {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    flex-grow: 1; /* Expand to fill available space */
+    justify-content: center; /* Center the menu buttons */
+}
+
+.nav__menu a {
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav__menu a::before,
+.nav__menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(77, 204, 162);
+    bottom: 0;
+    transition: width 0.3s ease; /* Add transition only for width */
+}
+
+.nav__menu a::before {
+    left: 0;
+}
+
+.nav__menu a::after {
+    right: 0;
+}
+
+.nav__menu a:hover::before,
+.nav__menu a:hover::after {
+    width: 100%;
+}
+
+.nav__menu a:hover {
+    color: rgb(77, 204, 162); /* Change text color to red on hover */
+}
+
+.form-group {
+    font-size: 200%;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+/*Products*/
+
+:root {
+    --color-grey-primary: #f0f0f0;
+    --color-yellow-primary: goldenrod;   
+    --color-orange-primary: darkorange;
+    --color-green-primary: mediumseagreen;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    justify-content: center;
+}
+
+.productList {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.productCard {
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--color-grey-primary);
+    margin: 1rem;
+    flex: 1 0 25rem;
+    max-width: 30rem;
+    max-height: 50rem;
+    transition: 0.2s;
+}
+
+.productCard:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+
+.productImage {
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 100%;
+    height: 350px;
+    border-bottom: 0.5px solid black; /* Add a black border with a thickness of 2 pixels */
+}
+
+.productCard__cart {
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    font-size: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.productCard__wishlist {
+    position: absolute;
+    right: 3rem;
+    margin: 1rem;
+    font-size: 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.productCard__fastSelling {
+    position: absolute;
+    font-size: 2rem;
+    left: 0;
+    margin: 1rem;
+    fill: var(--color-orange-primary);
+}
+
+.productCard__content {
+    margin: 2rem;
+}
+
+.productName {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.displayStack__1,
+.displayStack__2 {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productPrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.productSales,
+.productTime {
+    font-size: 1.1rem;
+}

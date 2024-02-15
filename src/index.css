@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Inter&family=Protest+Strike&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+@media(max-width: 768px) {
+    .mybtn {
+        width: 100%;
+    }
+}
