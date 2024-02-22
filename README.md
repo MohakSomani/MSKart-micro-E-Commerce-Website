@@ -2,11 +2,17 @@
 
 ## How to Run
 ### To Run Locally
+
   -> Download the ZIP or clone the repository
+  
   -> in Directory of the repo , you have to run 2 commands
+  
   -> ```npm i``` to setup dependencies
+
   -> ```npm run dev``` to run the project
+  
   -> press Ctrl and Click on the localhost link to open the website in a browser 
+  
 
 ### Deployed Github.io Page
 
